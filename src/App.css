@@ -1,0 +1,108 @@
+:root{
+  --primary-color: #edf2fc;
+  --secondery-color: #212121;
+}
+.dark-mode{
+  --primary-color: #000106;
+  --secondery-color: #edf2fc;
+
+}
+@font-face {
+  font-family: "Tanha";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../src/assets/fonts/Tanha-FD.woff2");
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  direction: rtl;
+}
+body{
+  height: 100vh;
+  font-family: Tanha;
+  
+}
+
+button {
+  padding: 8px 20px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.btn--primary {
+  background-color: var(--primary-color);
+  color: var(--secondery-color);
+  border-radius: 2px;
+  
+}
+
+.btn--outline {
+  background-color: var(--primary-color);
+  color: var(--secondery-color);
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: all 0.3s ease-out;
+}
+
+.btn--medium {
+  padding: 8px 20px;
+  font-size: 18px;
+}
+
+.btn--large {
+  padding: 12px 26px;
+  font-size: 20px;
+}
+
+.btn--large:hover,
+.btn--medium:hover {
+  transition: all 0.3s ease-out;
+  background: #fff;
+  color: #242424;
+  transition: 250ms;
+}
+.home,
+.services,
+.products,
+.sign-up {
+  background-color: var(--primary-color);
+  color: var(--secondery-color);
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+/* .services {
+  background-image: url('/images/img-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.products {
+  background-image: url('/images/img-1.jpg');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.sign-up {
+  background-image: url('/images/img-8.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+} */
