@@ -48,6 +48,9 @@
 .nav-item {
   height: 80px;
 }
+.nav-btn{
+  
+}
 
 .nav-links {
   color: var(--secondery-color);
@@ -82,7 +85,7 @@ color: var(--secondery-color);
 
 }
 
-@media screen and (max-width: 960px) {
+@media  (max-width: 960px) {
   .NavbarItems {
     position: relative;
   }
@@ -91,11 +94,11 @@ color: var(--secondery-color);
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 70vh;
     position: absolute;
     top: 80px;
-    left: -100%;
-    opacity: 1;
+    left: 0;
+    opacity: 0;
     transition: all 0.5s ease;
     justify-content: flex-start;
   }

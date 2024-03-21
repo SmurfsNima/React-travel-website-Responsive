@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import { useState, useEffect } from "react";
-import sun from "../assets/images/sun.jpg";
-import moon from "../assets/images/moon.jpg";
+
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -10,7 +9,7 @@ const Navbar = () => {
   const closemobileMenu = () => setClick(false);
   const [isDark, setDark] = useState(false);
   const showButton = () => {
-    if (window.innerWidth <= 960) {
+    if (window.innerWidth <= 800) {
       setButton(false);
     } else {
       setButton(true);
@@ -19,6 +18,7 @@ const Navbar = () => {
 
   useEffect(() => showButton(), []);
   window.addEventListener("resize", showButton);
+
   return (
     <>
       <nav className="navbar">
@@ -69,10 +69,13 @@ const Navbar = () => {
                 درباره ما
               </Link>
             </li>
-            {button && (
-            <button className="btn--outline btn--medium">ثبت نام</button>
-          )}
-            {/* <li  className='nav-item'>
+             <li  className="nav-item">
+             <button className="btn--outline btn--medium nav-links">ثبت نام</button>
+
+             </li>
+            
+        
+            <li  className='nav-item'>
             <Link
               to='/sign-up'
               className='nav-links-mobile'
@@ -80,7 +83,7 @@ const Navbar = () => {
             >
               درباره ما
             </Link>
-          </li> */}
+          </li>
           </ul>
          
          

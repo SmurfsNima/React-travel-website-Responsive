@@ -1,4 +1,4 @@
-import Video from "../assets/videos/video-2.mp4";
+
 import "./Herosection.css";
 import "../App.css";
 const Hero = () => {

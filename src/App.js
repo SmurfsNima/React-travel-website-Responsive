@@ -11,10 +11,10 @@ import Loader from "./components/loader";
 
 function App() {
   const [loading, setloading] = useState(false);
-  // useEffect(() => {
-  //   setloading(true);
-  //   setTimeout(() => setloading(false), 3000);
-  // }, []);
+  useEffect(() => {
+    setloading(true);
+    setTimeout(() => setloading(false), 3000);
+  }, []);
   return (
     <>
       {loading ? (
